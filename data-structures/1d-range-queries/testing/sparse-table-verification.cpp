@@ -2,8 +2,8 @@
 
 using namespace std;
 
-#include "sparse-table-general.hpp"
-#include "sparse-table-index.hpp"
+#include "../sparse-table-general.hpp"
+#include "../sparse-table-index.hpp"
 
 void testgeneral(){
 	cout << "--------- Testing SparseTable --------- \n";
