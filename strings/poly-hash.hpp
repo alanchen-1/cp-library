@@ -37,6 +37,11 @@ struct HashRange {
 	std::vector<std::array<int, 2>> pre = {{0, 0}};
 	std::string s;
 
+	HashRange(){}
+	HashRange(std::string s){
+		add(s);
+	}
+
 	void add(char c) {
 		s += c;
 		pre.push_back(base * pre.back() + make_hash(c));
