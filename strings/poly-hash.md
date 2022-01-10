@@ -1,6 +1,6 @@
 # Hashing - Polynomial Rolling
 
-Hashes strings using the polynomial rolling hash function to enable constant time equality checking after a linear time preprocessing. Generates two hashes to reduce probability of undesired collisions (when two unequal strings hash to the same value). 
+Hashes strings using the polynomial rolling hash function to enable constant time equality checking after a linear time preprocessing. Generates two hashes to reduce probability of undesired collisions (when two unequal strings hash to the same value). Both hash values must be equivalent for us to claim that the strings to be equal.  
 
 Not 100% deterministic, but the probability of a collision is negligible. 
 
