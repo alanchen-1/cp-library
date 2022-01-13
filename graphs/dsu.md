@@ -2,7 +2,7 @@
 
 Provides functions to unionize sets/check if two elements are in the same set in amortized O(α(x)), where α(x) is the inverse Ackermann function (nearly constant). Does so through path compression and union by size (small to large) optimizations. 
 
-## `struct DSU `
+## DSU
 
 ### Attributes
 
