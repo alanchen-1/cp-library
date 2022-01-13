@@ -13,6 +13,7 @@ To change the combination function, just change the code in `comb(a, b)`.
 ### Functions
 | Function | Description | Complexity |
 | ----------- | ----------- | ----------- |
+| `binlog(x)` | Gets the greatest power of 2 not greater than x. Assumes x is an `int`. | O(1) |
 | `comb(a, b)`| Combination function. Currently set to combine using `min(a, b)`. | O(1) |
 | `query(l, r)` | Gets the `min` element in the range `[l, r]` | O(1) |
 | `init(_v)` | Initializes the sparse table for vector `v` | O(nlog(n)) |
