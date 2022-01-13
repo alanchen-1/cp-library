@@ -1,8 +1,8 @@
 # Disjoint Set Union/Union Find
 
-Provides functions to unionize sets/check if two elements are in the same set in amortized O($\alpha$(x)), where $\alpha(x)$ is the inverse Ackermann function (nearly constant). Does so through path compression and union by size (small to large) optimizations. 
+Provides functions to unionize sets/check if two elements are in the same set in amortized O(α(x)), where α(x) is the inverse Ackermann function (nearly constant). Does so through path compression and union by size (small to large) optimizations. 
 
-## DSU
+## `struct DSU `
 
 ### Attributes
 
@@ -15,9 +15,9 @@ Provides functions to unionize sets/check if two elements are in the same set in
 | Function | Description | Complexity |
 | --------- | --------- | ------------|
 | `init(n)` | Initializes DSU structure with size `n` | O(n) |
-| `find(x)` | Finds the representative element of `x`'s set | O(alpha(n)) |
-| `same_set(a, b)` | Checks if two elements are in the same set | O(alpha(n)) |
-| `size(x)` | Returns size of `x`'s set | O(alpha(n)) |
-| `unite(x, y)` | Unites `x`'s set and `y`'s set. Returns `false` if `x` and `y` are in the same set. | O(alpha(n)) |
+| `find(x)` | Finds the representative element of `x`'s set | O(α(n)) |
+| `same_set(a, b)` | Checks if two elements are in the same set | O(α(n)) |
+| `size(x)` | Returns size of `x`'s set | O(α(n)) |
+| `unite(x, y)` | Unites `x`'s set and `y`'s set. Returns `false` if `x` and `y` are in the same set. | O(α(n)) |
 
 
