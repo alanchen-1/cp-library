@@ -2,4 +2,4 @@
 
 Finds all prime numbers between `[1, n]` in O(nlog(log(n))).
 
-I used this like once, until finding out that there exists a linear complexity version that accomplishes the same thing plus more; check `./nt/linear-sieve.hpp`. 
+I used this like once, until finding out that there exists a linear complexity version that accomplishes the same thing plus more; check [`./nt/linear-sieve.hpp`](https://github.com/alanchen-1/cp-library/blob/main/nt/linear-sieve.hpp). 
