@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## alanchen-1's cp-library
 
 You can use the [editor on GitHub](https://github.com/alanchen-1/cp-library/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
