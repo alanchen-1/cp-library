@@ -39,6 +39,7 @@ template <class T> struct SparseTableIndex {
 	}
 
 	int query(int l, int r){
+        assert(l >= 0); assert(r < (int) v.size());
 		return v[index(l, r)];
 	}
 };

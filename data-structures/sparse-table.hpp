@@ -29,7 +29,7 @@ template <class T> struct SparseTable{
 	}
 
 	T query(int l, int r){
-		assert(l <= r); assert(l >= 0); assert(r < v.size());
+		assert(l <= r); assert(l >= 0); assert(r < (int) v.size());
 		int k = binlog(r - l + 1);
 		return comb(st[k][l], st[k][r - (1 << k) + 1]);
 	}
