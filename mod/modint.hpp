@@ -1,3 +1,4 @@
+const int MAXN = 2 * 1e5; // change 
 const int MOD = 1e9 + 7; // 998244353, 1e9 + 9
 
 typedef std::decay<decltype(MOD)>::type mod_t;
@@ -71,5 +72,17 @@ struct mi{
 	friend mi operator-(mi a, const mi& b) { return a -= b; }
 	friend mi operator*(mi a, const mi& b) { return a *= b; }
 	friend mi operator/(mi a, const mi& b) { return a /= b; }
-
 };
+
+vector<mi> factorial(MAXN);
+void fillfactorial(){
+    factorial[0] = 1;
+    for(int i = 1; i < MAXN + 1; i++){
+        factorial[i] = factorial[i - 1] * i;
+    }
+}
+
+mi choose(int n, int k){
+    if (k > n || k < 0) return 0;
+    return factorial[n] * inv(factorial[k] * factorial[n - k]);
+}
