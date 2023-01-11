@@ -1,5 +1,3 @@
-#pragma once
-
 template <class T> struct SparseTable{
 	std::vector<T> v;
 	std::vector<std::vector<T>> st; 

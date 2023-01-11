@@ -1,5 +1,3 @@
-# pragma once
-
 struct DSU{
 	std::vector<int> parent;	
 	

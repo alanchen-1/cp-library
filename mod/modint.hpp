@@ -74,8 +74,8 @@ struct mi{
 	friend mi operator/(mi a, const mi& b) { return a /= b; }
 };
 
-vector<mi> factorial(MAXN);
-void fillfactorial(){
+vector<mi> factorial(MAXN + 1);
+void fill_factorial(){
     factorial[0] = 1;
     for(int i = 1; i < MAXN + 1; i++){
         factorial[i] = factorial[i - 1] * i;

@@ -1,5 +1,3 @@
-#pragma once
-
 template <class T> struct SparseTableIndex {
 	std::vector<T> v;
 	std::vector<std::vector<int>> st; 
